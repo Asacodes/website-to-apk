@@ -1,0 +1,23 @@
+{
+  // Use the base image that comes with GitHub Codespaces (Ubuntu 22.04)
+  "name": "Website‑to‑APK – Codespace",
+  "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+  },
+
+  // Default shell
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+
+  // Install useful extensions (optional)
+  "extensions": [
+    "ms-vscode.cpptools",
+    "vscode-xml",
+    "golang.go"
+  ],
+
+  // Mount the repo into the container
+  "workspaceFolder": "/workspaces/${website-to-apk}"
+}
